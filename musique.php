@@ -1,14 +1,25 @@
 <?php 
-require_once("header.php")
+require_once("header.php");
+$products = [
+  ['id' => 1, 'name' => 'kjdfhg'],
+  ['id' => 2, 'name' => 'Pkdshun']
+];
 ?>
+<a href ="categories.php">Back</a>
+<?php
+foreach ($products as $produit){
 
-<div class="card"> 
+  echo '<div class="card"> 
   <img src="/img/damso.jpg" alt="Album1" style="width:100%"/>
-  <h1>Damso - Ipséité</h1>
+  <h1>'.$produit['name'].'</h1>
   <p class="price">$12.99</p>
   <p>Album</p>
   <p><button>Add to Cart</button></p>
-</div>
+</div>';
+
+
+}
+?>
 
 <div class="card">
   <img src="/img/imagine-dragons.jpg" alt="Album2" style="width:100%">
