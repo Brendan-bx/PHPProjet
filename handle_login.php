@@ -16,7 +16,7 @@ if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false) {
 
 $account = account_getByEmail($_POST['email']);
 if ($account === false) {
-    header('Location: login.php');
+    header('Location: login.php?sucess=true');
     die();
 }
 
