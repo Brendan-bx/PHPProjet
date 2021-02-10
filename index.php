@@ -8,16 +8,17 @@ $account = $AccountManager->getByEmail('email@gg.com');
 // $account->email;
 // $account->password;
 ?>
+<link rel="stylesheet" href="index.css">
+
 
 <h1>Bienvenue sur notre boutique</h1>
-<a href ="signup.php">S'inscrire</a>
-<a href ="login.php">Se connecter</a>
 
+<div>
 <h3>Cliquez ici pour accéder aux catégories de nos différents produits</h3>
 <a href ="categories.php">Catégories</a>
+</div>
+<br>
 
-
-<a href ="logout.php">Se déconnecter</a>
 <?php
 require_once("footer.php")
 ?>
