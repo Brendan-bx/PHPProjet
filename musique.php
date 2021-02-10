@@ -1,28 +1,28 @@
 <?php 
 require_once("header.php")
 ?>
-<a href ="categories.php">Back</a>
 
 <div class="card"> 
   <img src="/img/damso.jpg" alt="Album1" style="width:100%"/>
-  <h1>Damso-Ipséité</h1>
+  <h1>Damso - Ipséité</h1>
   <p class="price">$12.99</p>
   <p>Album</p>
   <p><button>Add to Cart</button></p>
 </div>
 
 <div class="card">
-  <img src="" alt="Album2" style="width:100%">
-  <h1>??????</h1>
+  <img src="/img/imagine-dragons.jpg" alt="Album2" style="width:100%">
+  <h1>Imagine Dragons - Origins</h1>
   <p class="price">$19.99</p>
   <p>Lourd</p>
   <p><button>Add to Cart</button></p>
 </div>
+<a href ="categories.php">Back</a>
 
 <style type='text/css'>
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 350px;
   margin: auto;
   text-align: center;
   font-family: arial;

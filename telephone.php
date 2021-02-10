@@ -1,7 +1,6 @@
 <?php
 require_once("header.php")
 ?>
-<a href ="categories.php">Back</a>
 
 <div class="card">
   <img src="/img/Samsung.png" alt="Samsung" style="width:100%">
@@ -14,10 +13,12 @@ require_once("header.php")
 <div class="card">
   <img src="/img/Iphone12.png" alt="Iphone" style="width:100%">
   <h1>Iphone 12</h1>
-  <p class="price">$699.99</p>
+  <p class="price">$1599.99</p>
   <p>Le même téléphone tout les ans</p>
-  <p><button>Add to Cart</button></p>
+  <p><a href="prepanier.php"><button>Add to Cart</button></a></p>
+
 </div>
+<a href ="categories.php">Back</a>
 
 <style type='text/css'>
 .card {

@@ -1,40 +1,21 @@
-<?php 
+<?php
+require_once("db.php");
 
-require_once("init.php");
 
-// check empty fields
-if (empty($_POST['email']) || empty($_POST['password']) || empty($_POST['cpassword'])) {
-    header('Location: signup.php');
-    die();
+if (empty($_POST['email'])or empty($_POST['password'])) {
+    echo "un ou plusieurs champs sont vides\n";
 }
 
-
-// check email
-if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false) {
-    header('Location: signup.php');
-    die();
+if ($_POST['password'] != $_POST['cpassword']) {
+    echo "le mot de passe est différent";
 }
 
-// check confirm password
-if ($_POST['password'] !== $_POST['cpassword']) {
-    header('Location: signup.php');
-    die();
+if ($_POST['password'] = $_POST['cpassword']) {
+    echo "Le compte a été crée";
+    //$requete = $db -> prepare("INSERT INTO users (id, email, password,role) VALUES (?,?,?,?)");
+    //$requete-> execute([2,$_POST['email'],$_POST['password'],1]);
 }
-
-// $AccountManager->getByEmail();
-if (account_getByEmail($_POST['email']) !== false) {
-    header('Location: signup.php');
-    die();
-}
-
-$id = account_add([
-    'email' => $_POST['email'],
-    'password' => hash('sha256', $_POST['password']),
-]);
-
-header('Location: signup.php?success=true&user_id=' . $id);
-
-
-
 
 ?>
+<br>
+<a href ="signup.php"><button>BACK</button></a>

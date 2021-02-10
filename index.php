@@ -5,8 +5,8 @@ include("init.php");
 
 $account = $AccountManager->getByEmail('email@gg.com');
 
-// $account->email;
-// $account->password;
+ //$account->email;
+ //$account->password;
 ?>
 <link rel="stylesheet" href="index.css">
 

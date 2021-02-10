@@ -2,7 +2,7 @@
 
 class AccountManager {
 
-    private $_db;
+    public $_db;
 
     function __construct($db) {
         $this->setDb($db);

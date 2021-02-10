@@ -1,7 +1,6 @@
 <?php
 require_once("header.php")
 ?>
-<a href ="categories.php">Back</a>
 
 
 <div class="card">
@@ -19,6 +18,8 @@ require_once("header.php")
   <p>Pour rajouter un supplément au burger ;)</p>
   <p><button>Add to Cart</button></p>
 </div>
+<a href ="categories.php">Back</a>
+
 
 <?php
 require_once("footer.php")
