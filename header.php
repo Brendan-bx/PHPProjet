@@ -11,3 +11,4 @@
 <body>
 <a href ="signup.php">S'inscrire</a>
 <a href ="login.php">Se connecter</a>
+<a href ="delete.php">Suppression de compte</a>

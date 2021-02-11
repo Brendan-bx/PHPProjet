@@ -1,23 +1,28 @@
+<?php 
+require_once("header.php");
+$products = [
+  ['id' => 1, 'name' => 'Burger', 'image' => "/img/Burger.png", 'price' => '$15,99', 'desc' => 'Burger'],
+  ['id' => 2, 'name' => 'Frites', 'image' => "/img/Frites.png", 'price' => '$19,99', 'desc' => 'Frites']
+];
+?>
+<br>
 <?php
-require_once("header.php")
+foreach ($products as $produit){
+
+  echo '<div class="card"> 
+  <img src="'.$produit['image'].'"style="width:100%"/>
+  <h1>'.$produit['name'].'</h1>
+  <p class="price">'.$produit['price'].'</p>
+  <p>'.$produit['desc'].'</p>
+  <p><a href ="prepanier.php"><button>Add to Cart</button></a></p>
+</div>';
+
+
+}
+
 ?>
 
 
-<div class="card">
-  <img src="/img/Burger.png" alt="Burger" style="width:100%">
-  <h1>Burger simple</h1>
-  <p class="price">$15.99</p>
-  <p>Burger pour ceux qui ont la flemme</p>
-  <p><button>Add to Cart</button></p>
-</div>
-
-<div class="card">
-  <img src="/img/Frites.png" alt="Frites" style="width:100%">
-  <h1>Frites</h1>
-  <p class="price">$19.99</p>
-  <p>Pour rajouter un supplément au burger ;)</p>
-  <p><button>Add to Cart</button></p>
-</div>
 <a href ="categories.php">Back</a>
 
 

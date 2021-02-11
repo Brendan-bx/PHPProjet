@@ -1,7 +1,7 @@
 <?php
-require_once("header.php")
+require_once("header.php");
 ?>
 <p>Un article a été ajouté à votre panier, voulez vous continuer vos achats ou accéder au panier ?</p>
 <div>
-    <button href="categories.php">Retour</button>
-    <button href="panier.php">Panier</button>
+    <a href ="categories.php"><button>Retour</button></a>
+    <a href ="panier.php"><button>Panier</button></a>

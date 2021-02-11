@@ -1,23 +1,28 @@
 <?php
-require_once("header.php")
+
+require_once("header.php");
+$products = [
+  ['id' => 1, 'name' => 'Samsung Galaxy X', 'image' => "/img/Samsung.png", 'price' => '$499,99', 'desc' => 'Smartphone'],
+  ['id' => 2, 'name' => 'Iphone 12', 'image' => "/img/Iphone12.png", 'price' => '$1599,99', 'desc' => 'Le même telephone tout les ans']
+];
+?>
+<br>
+<?php
+foreach ($products as $produit){
+
+  echo '<div class="card"> 
+  <img src="'.$produit['image'].'"style="width:100%"/>
+  <h1>'.$produit['name'].'</h1>
+  <p class="price">'.$produit['price'].'</p>
+  <p>'.$produit['desc'].'</p>
+  <p><a href ="prepanier.php"><button>Add to Cart</button></a></p>
+</div>';
+
+
+}
+
 ?>
 
-<div class="card">
-  <img src="/img/Samsung.png" alt="Samsung" style="width:100%">
-  <h1>Samsung Galaxy</h1>
-  <p class="price">$499.99</p>
-  <p>Les androids c'est mieux</p>
-  <p><button>Add to Cart</button></p>
-</div>
-
-<div class="card">
-  <img src="/img/Iphone12.png" alt="Iphone" style="width:100%">
-  <h1>Iphone 12</h1>
-  <p class="price">$1599.99</p>
-  <p>Le même téléphone tout les ans</p>
-  <p><a href="prepanier.php"><button>Add to Cart</button></a></p>
-
-</div>
 <a href ="categories.php">Back</a>
 
 <style type='text/css'>

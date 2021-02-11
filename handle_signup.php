@@ -15,7 +15,7 @@ if ($_POST['password'] = $_POST['cpassword']) {
     //$requete = $db -> prepare("INSERT INTO users (id, email, password,role) VALUES (?,?,?,?)");
     //$requete-> execute([2,$_POST['email'],$_POST['password'],1]);
 }
-
+‡
 ?>
 <br>
 <a href ="signup.php"><button>BACK</button></a>

@@ -1,26 +1,28 @@
 <?php 
 require_once("header.php");
 $products = [
-  ['id' => 1, 'name' => 'kjdfhg'],
-  ['id' => 2, 'name' => 'Pkdshun']
+  ['id' => 1, 'name' => 'Damso - Ipséité', 'image' => "/img/damso.jpg", 'price' => '$19,99'],
+  ['id' => 2, 'name' => 'Imagine Dragons - Origins', 'image' => "/img/imagine-dragons.jpg", 'price' => '$12,99']
 ];
 ?>
+<br>
 <a href ="categories.php">Back</a>
 <?php
 foreach ($products as $produit){
 
   echo '<div class="card"> 
-  <img src="/img/damso.jpg" alt="Album1" style="width:100%"/>
+  <img src="'.$produit['image'].'" alt="Album1" style="width:100%"/>
   <h1>'.$produit['name'].'</h1>
-  <p class="price">$12.99</p>
+  <p class="price">'.$produit['price'].'</p>
   <p>Album</p>
-  <p><button>Add to Cart</button></p>
+  <p><a href ="prepanier.php"><button>Add to Cart</button></a></p>
 </div>';
 
 
 }
-?>
 
+?>
+<!--
 <div class="card">
   <img src="/img/imagine-dragons.jpg" alt="Album2" style="width:100%">
   <h1>Imagine Dragons - Origins</h1>
@@ -28,7 +30,7 @@ foreach ($products as $produit){
   <p>Lourd</p>
   <p><button>Add to Cart</button></p>
 </div>
-<a href ="categories.php">Back</a>
+<a href ="categories.php">Back</a> -->
 
 <style type='text/css'>
 .card {
